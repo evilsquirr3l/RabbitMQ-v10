@@ -19,7 +19,7 @@ public class BeerController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateGun(Beer beer)
+    public IActionResult CreateBeer(Beer beer)
     {
         ValidateModel(beer);
         PublishMessage(JsonConvert.SerializeObject(beer));
